@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.outer-container {
+    padding: 20px;
+    border: 3px solid black;
+    margin: 0 auto;
+    max-width: 1000px;
+    /* Adjust as needed for your layout */
+}
+
+
+
+.container {
+    width: calc(100% - 100px);
+    /* 100px on each side */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    background-color: rgb(167, 71, 146);
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.separator {
+    border-top: 3px dotted rgb(167, 71, 146);
+    margin: 20px 0;
+}
+
+.team-section {
+    margin-top: 30px;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-group {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-group-header {
+    display: inline-block;
+    /* Ensure the header div is inline */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-group h3 {
+    background-color: rgb(167, 71, 146);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    /* Change to inline-block */
+    margin: 0 10px 20px 0;
+    /* Adjust margins for spacing */
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    width: 150px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+    }
+}
